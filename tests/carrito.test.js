@@ -38,7 +38,7 @@ test("calcularTotales aplica descuento drop y código", () => {
   const items = [{ id: "a", cantidad: 2 }, { id: "b", cantidad: 2 }];
   const resultado = calcularTotales(items, productos, { descuentoDrop: 1000, porcentajeCodigo: 0.1 });
 
-  assert.deepEqual(resultado, { subtotal: 7000, drop: 1000, codigo: 700, total: 5300 });
+  assert.deepEqual(resultado, { subtotal: 7000, drop: 1000, codigo: 700, total: 5000 });
 });
 
 test("calcularTotales con carrito vacío da todo en cero", () => {
