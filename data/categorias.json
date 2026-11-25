@@ -1,0 +1,50 @@
+{
+  "tipos": [
+    {
+      "id": "sobres",
+      "nombre": "Sobres"
+    },
+    {
+      "id": "cartas",
+      "nombre": "Cartas sueltas"
+    },
+    {
+      "id": "exclusivas",
+      "nombre": "Exclusivas"
+    }
+  ],
+  "colecciones": [
+    {
+      "id": "saiyan",
+      "nombre": "Saiyan",
+      "total": 120
+    },
+    {
+      "id": "namek",
+      "nombre": "Namek",
+      "total": 90
+    },
+    {
+      "id": "cell",
+      "nombre": "Torneo de Cell",
+      "total": 60
+    },
+    {
+      "id": "fuerzas-especiales",
+      "nombre": "Fuerzas Especiales",
+      "total": 80
+    }
+  ],
+  "rarezas": [
+    5,
+    4,
+    3,
+    2
+  ],
+  "nombresRareza": {
+    "2": "Común",
+    "3": "Rara",
+    "4": "Épica",
+    "5": "Legendaria"
+  }
+}

@@ -1,0 +1,109 @@
+[hidden] {
+  display: none;
+}
+
+.mensaje {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-verde);
+}
+
+.vacio {
+  padding: var(--espacio-3);
+  border: 1px dashed var(--color-borde);
+  border-radius: var(--radio-grande);
+  text-align: center;
+  color: var(--color-texto);
+}
+
+.contador-caracteres {
+  font-size: 0.75rem;
+  text-align: right;
+  color: var(--color-texto);
+}
+
+.pagina-pago .pedido .boton {
+  margin-top: var(--espacio-2);
+}
+
+.pagina-carrito .descuento .mensaje {
+  margin-top: var(--espacio-1);
+}
+
+.pie .suscripcion .mensaje {
+  font-size: 0.8125rem;
+}
+
+/* Validación de formularios con JavaScript */
+.error-campo {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-rojo);
+}
+
+[aria-invalid="true"]:where(input, select, textarea) {
+  border-color: var(--color-rojo);
+  box-shadow: 0 0 0 1px var(--color-rojo);
+}
+
+.pie .suscripcion .error-campo {
+  margin-top: var(--espacio-1);
+}
+
+/* Error al cargar datos con fetch */
+.error-carga {
+  grid-column: 1 / -1;
+  border-color: var(--color-rojo);
+  color: var(--color-rojo);
+}
+
+/* Notificaciones flotantes */
+.avisos {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 100;
+  display: grid;
+  justify-items: end;
+  gap: var(--espacio-1);
+  pointer-events: none;
+}
+
+.aviso-flotante {
+  max-width: 24rem;
+  padding: 0.875rem 1.125rem;
+  border-left: 4px solid var(--color-verde);
+  border-radius: var(--radio-chico);
+  background-color: var(--color-tinta);
+  box-shadow: var(--sombra-suave);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-blanco);
+  animation: aparecer-aviso 0.25s ease-out;
+}
+
+.aviso-flotante.error {
+  border-left-color: var(--color-rojo);
+}
+
+@keyframes aparecer-aviso {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aviso-flotante {
+    animation: none;
+  }
+}
+
+/* Resumen de productos en la confirmación */
+.pagina-confirmacion .confirmado .filas {
+  max-width: 28rem;
+  margin: 0 auto var(--espacio-3);
+  font-size: 0.875rem;
+  text-align: left;
+}

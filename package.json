@@ -1,0 +1,18 @@
+{
+  "name": "doragon-tp4",
+  "version": "1.0.0",
+  "description": "Doragon - tienda de cartas coleccionables (TP4 Aplicaciones Web 1)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "five-server",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@12.8.1",
+  "type": "module",
+  "devDependencies": {
+    "five-server": "^0.5.0"
+  }
+}
