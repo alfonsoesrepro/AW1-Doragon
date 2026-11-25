@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import {
   validarNombre, validarEmail, validarDni, validarDireccion,
   validarTarjeta, validarVencimiento, validarCvv, validarNumeroPedido
-} from "../js/utilidades/validaciones.js";
+} from "../src/js/utilidades/validaciones.js";
 
 test("validarNombre acepta letras y rechaza números o textos cortos", () => {
   assert.equal(validarNombre("Nahuel Ferreyra"), "");

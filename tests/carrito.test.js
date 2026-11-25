@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { agregarItem, cambiarCantidadItem, quitarItem, contarUnidades, calcularTotales } from "../js/utilidades/carrito.js";
+import { agregarItem, cambiarCantidadItem, quitarItem, contarUnidades, calcularTotales } from "../src/js/utilidades/carrito.js";
 
 const productos = [
   { id: "a", precio: 1000, stock: 5 },

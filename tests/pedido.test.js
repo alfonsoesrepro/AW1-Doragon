@@ -1,8 +1,8 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { generarNumeroPedido, describirPago, crearMensajePedido, crearEnlaceWhatsapp } from "../js/utilidades/pedido.js";
-import { sortearRareza } from "../js/utilidades/sorteo.js";
-import { formatoPrecio } from "../js/utilidades/formato.js";
+import { generarNumeroPedido, describirPago, crearMensajePedido, crearEnlaceWhatsapp } from "../src/js/utilidades/pedido.js";
+import { sortearRareza } from "../src/js/utilidades/sorteo.js";
+import { formatoPrecio } from "../src/js/utilidades/formato.js";
 
 const pedido = {
   numero: "DR-12345",
